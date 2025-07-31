@@ -5,20 +5,17 @@
             "UserName": "renatof",
             "UseSecretStore": false,
             "ActionRepoName": "FaaSr-py-test-rpc",
-            "Branch": "main",
-            "Token": "My_GitHub_Account_TOKEN"
+            "Branch": "main"
         }
     },
     "DataStores": {
-        "My_S3_Bucket": {
-            "Bucket": "faasr-test-0001",
-            "Region": "us-east-1",
-            "Writable": "TRUE",
-            "AccessKey": "My_S3_Bucket_ACCESS_KEY",
-            "SecretKey": "My_S3_Bucket_SECRET_KEY"
+        "My_OSN_Bucket": {
+            "Endpoint": "https://amnh1.osn.mghpcc.org",
+            "Bucket": "deb170011-flare",
+            "Writable": "TRUE"
         }
     },
-    "ActionList": {
+     "ActionList": {
         "add_operation": {
             "FunctionName": "add_rpc",
             "FaaSServer": "My_GitHub_Account",
